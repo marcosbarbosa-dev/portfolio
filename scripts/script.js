@@ -86,28 +86,28 @@ let cardapio = document.querySelector('#cardapio')
 devNotes.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'DevNotes'
-    contentModal.innerHTML = 'Site de anotações pessoais que desenvolvi ao ter meus primeiros contatos com HTML5 e CSS3. Um metódo de aperfeiçoar meus conhecimentos enquanto estudava os mesmos.'
+    contentModal.innerHTML = 'Site de anotações pessoais que desenvolvi ao ter meus primeiros contatos com HTML5 e CSS3. Um metódo de aperfeiçoar meus conhecimentos enquanto estudava.'
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 19/07/2022'
 })
 sistemaEscolar.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Sistema Escolar'
-    contentModal.innerHTML = 'Desenvolvi um sistema básico escolar, com funções de cadastro, login, e conteúdos de visualizações exclusivas para administrador, armazenando dados de cadastros no localStorage.<br>Crie um usuário com user "admin", e outro com usuário de sua preferência para visualizar os conteúdos.'
+    contentModal.innerHTML = 'Desenvolvi um sistema básico escolar, com funções de cadastro, login, e conteúdos de visualizações exclusivas para administrador, armazenando dados de cadastros no localStorage.<br>Tente criar um usuário com nome "admin", e outro com nome de usuário de sua preferência para visualizar as diferenças de conteúdos.'
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 23/08/2022'
 })
 boletimJS.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Boletim Escolar'
-    contentModal.innerHTML = 'Desenvlvi um boletim escolar onde ao preencher os dados do aluno, ele designará automaticamente o nome para lista de "aprovados" ou "reprovados", conforme a situação do aluno.'
+    contentModal.innerHTML = 'Desenvolvi um boletim escolar onde ao preencher os dados do aluno, ele designará automaticamente o nome para lista de "aprovados" ou "reprovados", conforme a situação do aluno.'
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 17/08/2022'
 })
 cloneGoogle.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Clone Google'
-    contentModal.innerHTML = 'Desenvolvi um clone do site do Google para aperfeiçoar meus conhecimentos em HTML e CSS.'
+    contentModal.innerHTML = 'Desenvolvi um clone do Google para aperfeiçoar meus conhecimentos em HTML e CSS.'
     language.innerHTML = 'HTML - CSS'
     dataModal.innerHTML = 'Desenvolvido em: 20/07/2022'
 })

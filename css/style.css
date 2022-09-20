@@ -427,8 +427,7 @@ progress {
     top: 0;
     height: 100vh;
     width: 100vw;
-    opacity: .4;
-    background-color: rgba(214, 214, 214, 0.548);
+    background-color: rgba(214, 214, 214, 0.651);
     z-index: 1;
 }
 .modal {
