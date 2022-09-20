@@ -515,7 +515,7 @@ progress {
     animation: blinkCursor 550ms infinite normal, typing 3s steps(40) 1s normal both;
 }
 .light .typingAnimation {
-    animation: blinkCursorLight 550ms infinite normal, typing 3s steps(40) 1s normal both;
+    animation: blinkCursorLight 550ms infinite normal, typing 3s steps(40) 1.8s normal both;
 }
 @keyframes typing {
     from {
