@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfólio | Marcos Barbosa</title>
 </head>
-<body id="home">
+<body>
+<div class="positionMenu"><span id="home"></span></div>
     <header>
         <div class="headerContainer">
-            <img src="assets/header/menuOpen.png" id="menu">
-            <a href="#main"><img src="assets/header/logo.png" alt="LOGO"></a>
+            <img src="assets/header/menuOpen.svg" id="menu">
+            <a href="#home"><img src="assets/header/logo.png" alt="LOGO"></a>
             <div id="boxTheme">
                 <input type="checkbox" class="checkbox" id="theme">
                 <label class="label" for="theme" id="themeLabel">
@@ -24,7 +26,6 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contatos</a></li>
         </ul>
@@ -38,19 +39,21 @@
                         <p id="presName">Marcos Barbosa</p>
                         <p id="presDev">Desenvolvedor Front-End / Estudante em Back-End</p>
                     </div>
+                    <div class="positionMenu"><span id="sobre"></span></div>
                     <div class="presButtons">
                         <a href="assets/cv/cv-marcosbarbosa.pdf" id="presCurriculo" class="presStyleButtons" target="_blank">Currículo<img src="assets/pres/download.png" alt=""></a>
-                        <a href="mailto:marcosbarbosa-dev@gmail.com" id="presContato" class="presStyleButtons" target="_blank">Entrar em contato <img src="assets/pres/external.png" alt=""></a>
+                        <a href="https://api.whatsapp.com/send?phone=5561981016665&text=Ol%C3%A1!%20Vim%20pelo%20seu%20portf%C3%B3lio." id="presContato" class="presStyleButtons" target="_blank">Entrar em contato <img src="assets/pres/external.png" alt=""></a>
                     </div>
                 </div>
                 <img src="assets/pres/photo-pres.png" alt="PERFIL" id="perfil">
             </div>
             <div class="displayContent">
-                <div class="about" >
+                <div class="about">
                     <h2>Sobre</h2>
                     <p>Atualmente estou cursando Segurança da Informação no Instituto de Educação Superior de Brasília (IESB), e atuando como Desenvolvedor Front-End.<p>
                     <p>Possuo sólidos conhecimentos em HTML5 e CSS3. Estou me aperfeiçoamento em JavaScript, enquanto inicio meus estudos em NodeJS.</p>
                 </div>
+                <div class="positionMenu"><span id="projetos"></span></div>
                 <div class="habilidades" id="habilidades">
                     <div class="habilidadeContent">
                         <h2>Habilidades</h2>
@@ -64,55 +67,110 @@
             </div>
         </div>
         <div class="container">
-            <div class="projetos" id="projetos">
+            <div class="projetos">
                 <h2>Projetos</h2>
                 <div class="projetosContent">
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/devnotes.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="https://marcosbarbosa-dev.github.io/notes/" class="linkProjetos" target="_blank">Acessar</a>
+                             <p class="infProjetos" id="devNotes">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/notes/" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/sistema-escolar.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="https://marcosbarbosa-dev.github.io/sistema-escolar/login.html" class="linkProjetos" target="_blank">Acessar</a>
+                            <p class="infProjetos" id="sistemaEscolar">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/sistema-escolar/" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/boletim.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="https://marcosbarbosa-dev.github.io/boletim-js/" class="linkProjetos" target="_blank">Acessar</a>
+                             <p class="infProjetos" id="boletimJS">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/boletim-js/" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/clone-google.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="https://marcosbarbosa-dev.github.io/clone-google/" class="linkProjetos" target="_blank">Acessar</a>
+                             <p class="infProjetos" id="cloneGoogle">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/clone-google/" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/cordel.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="https://marcosbarbosa-dev.github.io/projeto-cordel/" class="linkProjetos" target="_blank">Acessar</a>
+                             <p class="infProjetos" id="cordel">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/projetoCordel" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                     <div class="projetosItem">
-                        <img src="assets/projetos/img.png" alt="">
+                        <img src="assets/projetos/cardapio.png" alt="">
                         <div class="projetosBtnLink">
-                            <a href="#" class="linkProjetos">Acessar</a>
-                            <a href="#" class="linkProjetos">Repositório</a>
+                            <a href="#projetos" class="linkProjetos" target="_blank">Acessar</a>
+                             <p class="infProjetos" id="cardapio">Informações</p>
+                            <a href="https://github.com/marcosbarbosa-dev/" class="linkProjetos" target="_blank">Repositório</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="contato" id="contato">
+                <h2>Contato</h2>
+                <div class="containerContato">
+                    <div class="contatoCont">
+                        <a href="mailto:dev.marcosbarbosa@gmail.com" target="_blank">
+                            <img src="assets/contato/emailD.png" id="emailIco">
+                            <h3>Email</h3>
+                            <p>dev.marcosbarbosa@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contatoCont">
+                        <a href="https://api.whatsapp.com/send?phone=5561981016665&text=Ol%C3%A1!%20Vim%20pelo%20seu%20portf%C3%B3lio." target="_blank">
+                            <img src="assets/contato/telefoneD.png" id="telefoneIco">
+                            <h3>Telefone</h3>
+                            <p>61 98101-6665</p>
+                        </a>
+                    </div>
+                    <div class="contatoCont">
+                        <a href="https://github.com/marcosbarbosa-dev/" target="_blank">
+                            <img src="assets/contato/githubD.png" id="githubIco">
+                            <h3>GitHub</h3>
+                            <p>marcosbarbosa-dev</p>                 
+                        </a>
+                    </div>
+                    <div class="contatoCont">
+                        <a href="http://www.instagram.com/sn.marcos/" target="_blank">
+                            <img src="assets/contato/instagramD.png" id="instagramIco">
+                            <h3>Instagram</h3>
+                            <p>@sn.marcos</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+<div class="modalBG"></div>
+<div class="modal">
+    <div class="lineClose">
+        <h2 id="titleModal"></h2>
+        <img src="assets/modal/close.png" id="closeModal">
+    </div>
+    <div class="modalContent">
+        <p id="contentModal"></p>
+        <div class="basicInfModal">
+            <p id="language"></p>
+            <p id="dataModal"></p>
+        </div>
+    </div>
+</div>
 <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #15b8e0;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #15b8e0;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="9.844" y="9.313" width="10.062" height="11.094" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="15" cy="15" r="13.094"/>
+  <path id="Retângulo_3_copiar" data-name="Retângulo 3 copiar" class="cls-2" d="M11.352,20.406l8.555-9.789L18.4,9.3,9.846,19.09Z"/>
+  <path id="Retângulo_3_copiar_2" data-name="Retângulo 3 copiar 2" class="cls-2" d="M11.352,9.313L19.906,19.1,18.4,20.417,9.846,10.629Z"/>
+</svg>
