@@ -27,7 +27,7 @@ header {
     width: 100%;
     border-bottom: 1px solid #1db3d89d;
     background-color: var(--cor1);
-    z-index: 0;
+    z-index: 1;
 }
 .headerContainer {
     margin: 0 auto;
@@ -146,6 +146,9 @@ main {
     font-family: var(--Poppins);
     font-size: 46px;
     color: var(--cor2);
+    border-right: 2px solid rgba(255, 255, 255, 0.363);
+    white-space: nowrap;
+    overflow: hidden;
 }
 #presDev {
     max-width: 100%;
@@ -338,7 +341,7 @@ progress {
     .pres {
         justify-content: center;
         align-items: center;
-        padding: 4rem 4px;
+        padding: 6rem 4px 4rem 4px;
     }
     .presTitle h1 {
         font-size: 27px;
@@ -486,5 +489,51 @@ progress {
     }
     .modalContent p {
         padding: 0 1% 7px 1%;
+    }
+}
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.typingAnimation {
+    animation: blinkCursor 550ms infinite normal, typing 3s steps(40) 1s normal both;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    } to {
+        width: 100%;
+    }
+}
+@keyframes blinkCursor{
+    from {
+        border-right-color: rgba(255, 255, 255, 0.363);
+    } to {
+        border-right-color: transparent;
+    }
+}
+@media (max-width:700px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        } to {
+            width: 76%;
+        }
     }
 }

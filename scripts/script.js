@@ -1,5 +1,4 @@
 // MENU
-
 let menu = document.querySelector('#menu')
 let nav = document.querySelector('#nav')
 let itemMenu = document.querySelector('ul')
@@ -17,8 +16,8 @@ itemMenu.addEventListener('click', ()=> {
     nav.style.display = 'none'
     menu.src = 'assets/header/menuOpen.svg'
 })
-// TEMA
 
+// TEMA
 let temaBtn = document.querySelector('#theme')
 let ball = document.querySelector('.ball')
 let themeLabel = document.querySelector('#themeLabel')
@@ -50,8 +49,26 @@ temaBtn.addEventListener('click', ()=> {
     }
 })
 
-// MODAL
+// SCROLL ANIMATION
+const target = document.querySelectorAll('[data-anime]')
+const animationClass = 'animate'
+function animeScroll() {
+    const windowTop = window.pageYOffset + (window.innerHeight * 3/4)
+    target.forEach(function(element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass)
+        } else {
+            element.classList.remove(animationClass)
+        }
+    })
+}
+animeScroll()
+window.addEventListener('scroll', function() {
+    animeScroll()
+})
 
+
+// MODAL
 const modalBG = document.querySelector('.modalBG')
 const modal = document.querySelector('.modal')
 const closeModal = document.querySelector('#closeModal')
