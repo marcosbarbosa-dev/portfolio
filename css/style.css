@@ -420,7 +420,6 @@ progress {
 }
 
 /*MODAL*/
-
 .modalBG {
     display: none;
     position: fixed;
@@ -494,7 +493,6 @@ progress {
 }
 
 /* Animação */
-
 [data-anime] {
     opacity: 0;
     transition: .5s;
@@ -537,11 +535,10 @@ progress {
         from {
             width: 0;
         } to {
-            width: 76%;
+            width: 76.8%;
         }
-    }
+    } 
 }
-
 @keyframes blinkCursorLight{
     from {
         border-right-color: rgba(0, 0, 0, 0.363);
