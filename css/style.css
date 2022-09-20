@@ -53,6 +53,7 @@ nav {
     justify-content: center;
     top: 61px;
     background-color: #070724;
+    z-index: 1;
 }
 nav ul {
     width: 100%;
@@ -495,7 +496,7 @@ progress {
 /* Animação */
 [data-anime] {
     opacity: 0;
-    transition: .5s;
+    transition: .7s;
 }
 [data-anime="left"] {
     transform: translate3d(-50px, 0, 0);
