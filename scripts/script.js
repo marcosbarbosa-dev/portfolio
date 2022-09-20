@@ -1,7 +1,8 @@
-// MENU RESPONSIVO
+// MENU
 
 let menu = document.querySelector('#menu')
 let nav = document.querySelector('#nav')
+let itemMenu = document.querySelector('ul')
 
 menu.addEventListener('click', ()=>{
     if(nav.style.display == 'flex') {
@@ -12,7 +13,10 @@ menu.addEventListener('click', ()=>{
         menu.src = 'assets/header/menuClose.svg'
     }
 })
-
+itemMenu.addEventListener('click', ()=> {
+    nav.style.display = 'none'
+    menu.src = 'assets/header/menuOpen.svg'
+})
 // TEMA
 
 let temaBtn = document.querySelector('#theme')

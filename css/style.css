@@ -26,7 +26,8 @@ header {
     top: 0;
     width: 100%;
     border-bottom: 1px solid #1db3d89d;
-    background-color: var(--cor1)
+    background-color: var(--cor1);
+    z-index: 0;
 }
 .headerContainer {
     margin: 0 auto;
@@ -44,7 +45,8 @@ header {
     cursor: pointer;
 }
 nav {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -125,7 +127,7 @@ main {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 7rem 3rem;
+    padding: 6rem 3rem 4rem 3rem;
     flex-wrap: wrap-reverse;
 }
 .presTitle h1 {
@@ -201,10 +203,9 @@ main {
     margin-bottom: 13px;
 }
 .about {
-    margin: 10px 0;
     min-width: 300px;
     max-width: 45%;
-    padding: 0 20px;
+    padding-top: 12vh;
 }
 .about p {
     max-width: 95%;
@@ -215,6 +216,7 @@ main {
     min-width: 300px;
     max-width: 45%;
     padding: 0 20px;
+    padding-top: 12vh;
 }
 .habilidadeItem {
     margin: 3px 0;
@@ -240,7 +242,7 @@ progress {
     color: #ffffffb7;
 }
 .projetos {
-    margin-top: 40px;
+    padding-top: 12vh;
 }
 .projetos h2 {
     text-align: center;
@@ -292,7 +294,7 @@ progress {
     background-image: linear-gradient(to right, #086c85, #003b49);
 }
 .contato {
-    margin-top: 100px;
+    padding-top: 12vh;
 }
 .contato h2 {
     text-align: center;
