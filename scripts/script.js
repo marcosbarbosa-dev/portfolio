@@ -81,7 +81,7 @@ let sistemaEscolar = document.querySelector('#sistemaEscolar')
 let boletimJS = document.querySelector('#boletimJS')
 let cloneGoogle = document.querySelector('#cloneGoogle')
 let cordel = document.querySelector('#cordel')
-let cardapio = document.querySelector('#cardapio')
+let android = document.querySelector('#android')
 
 devNotes.addEventListener('click', ()=> {
     openModal() 
@@ -118,12 +118,12 @@ cordel.addEventListener('click', ()=> {
     language.innerHTML = 'HTML - CSS'
     dataModal.innerHTML = 'Desenvolvido em: 12/07/2022'
 })
-cardapio.addEventListener('click', ()=> {
+android.addEventListener('click', ()=> {
     openModal() 
-    titleModal.innerHTML = 'Cardápio'
-    contentModal.innerHTML = 'Estou desenvolvendo um cardápio online, aonde irei incrementar algumas funções com o uso do localStorage.'
-    language.innerHTML = 'HTML - CSS - JS'
-    dataModal.innerHTML = 'Desenvolvido em: -'
+    titleModal.innerHTML = 'Projeto Android'
+    contentModal.innerHTML = 'Projeto desenvolvido através das aulas do Curso em Vídeo ministrada pelo professor Gustavo Guanabara.'
+    language.innerHTML = 'HTML - CSS'
+    dataModal.innerHTML = 'Desenvolvido em: 05/07/2022'
 })
 
 
