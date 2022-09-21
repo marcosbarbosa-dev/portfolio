@@ -546,3 +546,17 @@ progress {
         border-right-color: transparent;
     }
 }
+
+#toTop {
+    position: fixed;
+    cursor: pointer;
+    bottom: 25px;
+    right: 20px;
+    width: 35px;
+    opacity: .4;
+    transition: .3s;
+}
+#toTop:hover {
+
+    opacity: 1;
+}

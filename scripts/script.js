@@ -26,6 +26,7 @@ let emailIco = document.querySelector('#emailIco')
 let telefoneIco = document.querySelector('#telefoneIco')
 let githubIco = document.querySelector('#githubIco')
 let instagamIco = document.querySelector('#instagramIco')
+let toTopIco = document.querySelector('#toTop')
 
 temaBtn.addEventListener('change', ()=> {
     ball.classList.toggle('btnDarkBall')
@@ -41,11 +42,13 @@ temaBtn.addEventListener('click', ()=> {
         telefoneIco.src = 'assets/contato/telefoneD.png'
         githubIco.src = 'assets/contato/githubD.png'
         instagamIco.src = 'assets/contato/instagramD.png'
+        toTopIco.src = 'assets/btn/toTop.png'
     } else {
         emailIco.src = 'assets/contato/emailL.png'
         telefoneIco.src = 'assets/contato/telefoneL.png'
         githubIco.src = 'assets/contato/githubL.png'
         instagamIco.src = 'assets/contato/instagramL.png'
+        toTopIco.src = 'assets/btn/toTopLight.png'
     }
 })
 
