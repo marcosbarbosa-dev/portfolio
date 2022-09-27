@@ -156,6 +156,15 @@ function closeNowBtn() {
     language.innerHTML = ''
     dataModal.innerHTML = ''
 }
+modalBG.addEventListener('click', closeOutModal)
+function closeOutModal() {
+    modalBG.style.display = 'none'
+    modal.style.display = 'none'
+    titleModal.innerHTML = ''
+    contentModal.innerHTML = ''
+    language.innerHTML = ''
+    dataModal.innerHTML = ''
+}
 document.addEventListener('keydown', (event) => 
 event.key === "Escape" ? closeNow() : ''
 );

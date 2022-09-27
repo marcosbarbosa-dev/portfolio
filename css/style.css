@@ -448,7 +448,7 @@ progress {
     text-align: center;
 }
 .lineClose h2 {
-    font-family: 'Calibri';
+    font-family: 'Calibri', sans-serif;
     color: #000000;
     margin: 12px;
 }
