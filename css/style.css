@@ -427,7 +427,7 @@ progress {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(214, 214, 214, 0.651);
+    background-color: rgba(161, 161, 161, 0.753);
     z-index: 1;
 }
 .modal {
@@ -437,33 +437,39 @@ progress {
     left: 50%;
     max-height: 100%;
     max-width: 100%;
-    border-radius: 7px;
-    padding: 0px 20px 20px 20px;
+    border-radius: 3px;
     transform: translate(-50%, -50%);
-    background-color: rgb(12, 41, 73);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.171);
     z-index: 2;
 }
 .lineClose {
     text-align: center;
-    padding: 10px;
 }
 .lineClose h2 {
-    color: #ffffff;
-    margin-bottom: 7px;
+    font-family: 'Calibri';
+    color: #000000;
+    margin: 12px;
 }
 .lineClose img {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 15px;
     cursor: pointer;
     width: 20px;
     opacity: .6;
 }
+.modalContent {
+    border: 0.01em solid rgb(214, 214, 214);
+    border-left: 0;
+    border-right: 0;
+}
 .modalContent p {
-    text-align: justify;
-    padding: 0 4% 7px 4%;
-    color: #ffffff;
+    font-family: 'Calibri';
+    max-width: 100%;
+    padding: 5px 3%;
+    color: #000000;
 }
 .basicInfModal {
     display: flex;
@@ -472,14 +478,29 @@ progress {
     justify-content: space-between;
 }
 #dataModal {
+    font-family: 'Calibri';
     font-size: 12px;
-    margin-top: 7px;
-    color: rgba(255, 255, 255, 0.555);
+    color: rgba(0, 0, 0, 0.555);
+    margin-right: 3%;
 }
 #language {
+    font-family: 'Calibri';
     font-size: 13px;
-    margin-top: 7px;
-    color: rgba(255, 255, 255, 0.555);
+    color: rgba(0, 0, 0, 0.555);
+    margin-left: 3%;
+}
+.btnCloseModal {
+    display: flex;
+    padding: 10px 10px 10px 4%;
+    justify-content: end;
+}
+#closeModalBtn {
+    cursor: pointer;
+    background-color: #777777;
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px;
+    border: 0;
 }
 @media (max-width:550px) {
     .modal {
@@ -488,7 +509,7 @@ progress {
         padding: 0 10px;
     }
     .modalContent p {
-        padding: 0 1% 7px 1%;
+        padding: 5px 1% 5px 1%;
     }
 }
 

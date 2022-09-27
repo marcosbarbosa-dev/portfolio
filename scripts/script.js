@@ -70,11 +70,11 @@ window.addEventListener('scroll', function() {
     animeScroll()
 })
 
-
 // MODAL
 const modalBG = document.querySelector('.modalBG')
 const modal = document.querySelector('.modal')
 const closeModal = document.querySelector('#closeModal')
+const closeModalBtn = document.querySelector('#closeModalBtn')
 let titleModal = document.querySelector('#titleModal')
 let contentModal = document.querySelector('#contentModal')
 let dataModal = document.querySelector('#dataModal')
@@ -89,42 +89,43 @@ let android = document.querySelector('#android')
 devNotes.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'DevNotes'
-    contentModal.innerHTML = 'Site de anotações pessoais que desenvolvi ao ter meus primeiros contatos com HTML5 e CSS3. Um metódo de aperfeiçoar meus conhecimentos enquanto estudava.'
+    contentModal.innerHTML = '<p>Site de anotações pessoais que desenvolvi ao ter meus primeiros contatos com HTML5 e CSS3. Um metódo de aperfeiçoar meus conhecimentos enquanto estudava.</p>'
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 19/07/2022'
 })
 sistemaEscolar.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Sistema Escolar'
-    contentModal.innerHTML = 'Desenvolvi um sistema básico escolar, com funções de cadastro, login, e conteúdos de visualizações exclusivas para administrador, armazenando dados de cadastros no localStorage.<br>Tente criar um usuário com nome "admin", e outro com nome de usuário de sua preferência para visualizar as diferenças de conteúdos.'
+    contentModal.innerHTML = '<p>Desenvolvi um sistema básico escolar. Nele adiconei dois tipos de usuários (ambos deverão ser cadastrados). O sitema possui página de cadastro, login e a página index com os conteúdos. Através do JS, permiti que apenas os usuários logados possam ver o conteúdo do index. Fiz isso através de um token aleatório que é criado toda vez que o usuário faz o login. Já a parte de cadastro, todos os dados são armazenados em um array no localStorage.</p><p>- Cadastre um novo usuário com o user: admin e outro com user de sua preferência. O usuário admin poderá ver dentro da página index mais informações do que um usuário com nome diferente.'
+
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 23/08/2022'
 })
 boletimJS.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Boletim Escolar'
-    contentModal.innerHTML = 'Desenvolvi um boletim escolar onde ao preencher os dados do aluno, ele designará automaticamente o nome para lista de "aprovados" ou "reprovados", conforme a situação do aluno.'
+    contentModal.innerHTML = '<p>Desenvolvi um boletim escolar onde ao preencher os dados do aluno, ele designará automaticamente o nome para lista de "aprovados" ou "reprovados", conforme a situação do aluno.</p>'
     language.innerHTML = 'HTML - CSS - JS'
     dataModal.innerHTML = 'Desenvolvido em: 17/08/2022'
 })
 cloneGoogle.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Clone Google'
-    contentModal.innerHTML = 'Desenvolvi um clone do Google para aperfeiçoar meus conhecimentos em HTML e CSS.'
+    contentModal.innerHTML = '<p>Desenvolvi um clone do Google para aperfeiçoar meus conhecimentos em HTML e CSS.</p>'
     language.innerHTML = 'HTML - CSS'
     dataModal.innerHTML = 'Desenvolvido em: 20/07/2022'
 })
 cordel.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Projeto Cordel'
-    contentModal.innerHTML = 'Projeto desenvolvido através das aulas do Curso em Vídeo ministrada pelo professor Gustavo Guanabara.'
+    contentModal.innerHTML = '<p>Projeto desenvolvido através das aulas do Curso em Vídeo ministrada pelo professor Gustavo Guanabara.</p>'
     language.innerHTML = 'HTML - CSS'
     dataModal.innerHTML = 'Desenvolvido em: 12/07/2022'
 })
 android.addEventListener('click', ()=> {
     openModal() 
     titleModal.innerHTML = 'Projeto Android'
-    contentModal.innerHTML = 'Projeto desenvolvido através das aulas do Curso em Vídeo ministrada pelo professor Gustavo Guanabara.'
+    contentModal.innerHTML = '<p>Projeto desenvolvido através das aulas do Curso em Vídeo ministrada pelo professor Gustavo Guanabara.</p>'
     language.innerHTML = 'HTML - CSS'
     dataModal.innerHTML = 'Desenvolvido em: 05/07/2022'
 })
@@ -135,8 +136,19 @@ function openModal() {
     modalBG.style.display = 'block'
     modal.style.display = 'block'
 }
+
 closeModal.addEventListener('click', closeNow)
 function closeNow() {
+    modalBG.style.display = 'none'
+    modal.style.display = 'none'
+    titleModal.innerHTML = ''
+    contentModal.innerHTML = ''
+    language.innerHTML = ''
+    dataModal.innerHTML = ''
+}
+
+closeModalBtn.addEventListener('click', closeNowBtn)
+function closeNowBtn() {
     modalBG.style.display = 'none'
     modal.style.display = 'none'
     titleModal.innerHTML = ''
